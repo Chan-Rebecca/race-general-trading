@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title> Race General Trading </title>
+
+		<meta charset = "UTF-8" />
+		<meta name = "author" content = "Rebecca Chan" /> <!--date of creation; Sun, June 21, 2026-->
+		<meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+		<meta name = "description" content = "Race General Trading Co. Ltd" />
+
+		<!--browser icon-->
+		<link 	rel = "icon"
+      			href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🚢</text></svg>' />
+
+		<!--font awesome link-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+        <!--custom css-->
+		<link rel = "stylesheet" href = "css/style.css" />
+
+		<!--google css-->
+        <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+        <link href = "https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel = "stylesheet" />
+	</head>
+
+	<body>
+
+		<!--top bar-->
+		<div class = "topbar">
+			<div class = "topbar-inner">
+				<div class = "topbar-contact">
+					<a href = "tel:+211911210809"> <span class = "ic">&#9742;</span> +211 911 210 809 </a>
+					<a href = "mailto:racegeneraltrading@gmail.com"> <span class = "ic">&#9993;</span> racegeneraltrading@gmail.com </a>
+				</div>
+			</div>
+		</div>
+		<!--top bar end-->
+
+		<!--header / nav-->
+		<header class = "site-header" id = "siteHeader">
+			<div class = "header-inner">
+				<a href = "index.html" class = "logo">
+					<span class = "logo-mark"> RACE </span>
+					<span class = "logo-sub"> GENERAL TRADING CO. LTD </span>
+				</a>
+
+				<nav class = "main-nav" id = "mainNav">
+					<a href = "index.html"> Home </a>
+					<a href = "about.html"> About </a>
+					<a href = "services.html"> Services </a>
+					<a href = "certifications.html"> Certifications </a>
+					<a href = "contact.html" class = "active"> Contact </a>
+				</nav>
+
+				<a href = "contact.html" class = "btn btn-primary nav-cta"> Request a Quote </a>
+
+				<button class = "nav-toggle" id = "navToggle" aria-label = "Toggle navigation" aria-expanded = "false">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</header>
+		<!--header / nav end-->
+
+		<main>
+
+			<!--page hero-->
+			<section class = "contact-hero">
+			    <div class = "contact-hero-bg"></div>
+			    	<div class = "contact-hero-content">
+			      		<nav class = "contact-breadcrumb" aria-label = "Breadcrumb">
+			        		<a href = "index.html"> Home </a>
+			        		<span> / </span>
+			        		<span class = "contact-breadcrumb-current"> Contact </span>
+			      		</nav>
+			      		<p class = "eyebrow eyebrow-light"> [ GET IN TOUCH ] </p>
+			      		<h1> Let&rsquo;s Talk <br> About Your Project. </h1>
+			      		<p class = "contact-hero-sub">
+			      			Whether you need a quote, have a question about our services, or want to discuss a project — we respond to every enquiry. No delays, no automated systems.
+			      		</p>
+			    	</div>
+			    	<div class = "contact-hero-rule"></div>
+			</section>
+			<!--page hero end-->
+
+			<!--main contact-->
+			<section class = "contact-main">
+    			<div class = "section-inner">
+      				<div class = "contact-layout">
+
+      					<!--form-->
+      					<div class = "contact-form-wrap">
+          					<p class = "eyebrow"> [ SEND A MESSAGE ] </p>
+          					<h2> Request a Quote or Enquiry </h2>
+
+          					<!--point form action at your backend handler-->
+          					<form class = "contact-form" id = "contactForm" action = "#" method = "POST" novalidate>
+
+          						<div class = "form-row form-row--two">
+					              	<div class = "form-field">
+					                	<label for = "full_name"> Full Name <span class = "req"> * </span> </label>
+					                	<input type = "text" id = "full_name" name = "full_name" placeholder = "Your full name" required autocomplete = "name" />
+					                	<span class = "field-error" aria-live = "polite"></span>
+					              	</div>
+
+					              	<div class = "form-field">
+					                	<label for = "email"> Email Address <span class = "req"> * </span> </label>
+					                	<input type = "email" id = "email" name = "email" placeholder = "you@example.com" required autocomplete = "email" />
+					                	<span class = "field-error" aria-live = "polite"></span>
+					              	</div>
+					            </div>
+
+					            <div class = "form-row form-row--two">
+					              	<div class = "form-field">
+					                	<label for = "phone"> Phone Number </label>
+					                	<input type = "tel" id = "phone" name = "phone" placeholder = "+211 ..." autocomplete = "tel" />
+					              	</div>
+
+					              	<div class = "form-field">
+					                	<label for = "service"> Service of Interest </label>
+
+					                	<div class = "select-wrap">
+					                  		<select id = "service" name = "service">
+					                    		<option value = ""> Select a service&hellip; </option>
+					                    		<option value = "electricity"> Electricity Services </option>
+					                    		<option value = "carpentry"> Carpentry Services </option>
+					                    		<option value = "aluminum"> Aluminum Services </option>
+					                    		<option value = "construction"> Construction &amp; Civil Works </option>
+					                    		<option value = "maintenance"> Maintenance Services </option>
+					                    		<option value = "sanitary"> Sanitary Services </option>
+					                    		<option value = "painting"> Painting Services </option>
+					                    		<option value = "equipment"> Equipment &amp; Tools Supply </option>
+					                    		<option value = "transport"> Transportation Supply </option>
+					                    		<option value = "engineering"> Engineering Services </option>
+					                    		<option value = "general"> General Enquiry </option>
+					                  		</select>
+
+					                  		<svg class = "select-arrow" viewBox = "0 0 12 8" fill = "none" xmlns = "http://www.w3.org/2000/svg" aria-hidden = "true">
+					                    		<path d = "M1 1L6 7L11 1" stroke = "currentColor" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+					                  		</svg>
+					                	</div>
+					              	</div>
+					            </div>
+
+					            <div class = "form-field">
+					              	<label for = "subject"> Project / Subject <span class = "req"> * </span> </label>
+					              	<input type = "text" id = "subject" name = "subject" placeholder = "Brief description of what you need" required />
+					              	<span class = "field-error" aria-live = "polite"></span>
+					            </div>
+
+					            <div class = "form-field">
+					              	<label for = "message"> Message <span class = "req"> * </span> </label>
+					              	<textarea id = "message" name = "message" rows = "6" placeholder = "Tell us about your project — location, scope, timeline, any specific requirements..." required></textarea>
+					              	<span class = "field-error" aria-live = "polite"></span>
+					            </div>
+
+					            <div class = "form-footer">
+					              	<p class = "form-note">
+					              		Fields marked <span class = "req"> * </span> are required. We aim to respond within one business day.
+					              	</p>
+					              	<button type = "submit" class = "btn btn-primary btn-submit" id = "submitBtn">
+					                	<span class = "btn-label"> Send Message </span>
+					                	<svg class = "btn-icon" viewBox = "0 0 20 16" fill = "none" xmlns = "http://www.w3.org/2000/svg" aria-hidden = "true">
+					                  		<path d = "M1 8H19M19 8L12 1M19 8L12 15" stroke = "currentColor" stroke-width = "1.8" stroke-linecap = "round" stroke-linejoin = "round" />
+					                	</svg>
+					              	</button>
+					            </div>
+
+					            <!--success / error feedback-->
+					            <div class = "form-feedback form-feedback--success" id = "formSuccess" hidden>
+					              	<svg viewBox = "0 0 20 20" fill = "none" xmlns = "http://www.w3.org/2000/svg" aria-hidden = "true">
+					                	<circle cx = "10" cy = "10" r = "9" stroke = "#3A6E3A" stroke-width = "1.5" />
+					                	<path d = "M6 10L9 13L14 7" stroke = "#3A6E3A" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+					              	</svg>
+					              	<p> Your message has been sent. We&rsquo;ll be in touch shortly. </p>
+					            </div>
+
+					            <div class = "form-feedback form-feedback--error" id = "formError" hidden>
+					              	<svg viewBox = "0 0 20 20" fill = "none" xmlns = "http://www.w3.org/2000/svg" aria-hidden = "true">
+					                	<circle cx = "10" cy = "10" r = "9" stroke = "#8B0000" stroke-width = "1.5" />
+					                	<path d = "M10 6V11" stroke = "#8B0000" stroke-width = "1.5" stroke-linecap = "round" />
+					                	<circle cx = "10" cy = "14" r = "0.7" fill = "#8B0000" />
+					              	</svg>
+					              	<p> Something went wrong. Please try again or contact us directly by phone. </p>
+					            </div>
+
+          					</form>
+          				</div>
+
+          				<!--contact info sidebar-->
+          				<aside class = "contact-info">
+          					<p class = "eyebrow"> [ REACH US DIRECTLY ] </p>
+          					<h2> Contact Details </h2>
+
+          					<div class = "contact-info-items">
+
+          						<div class = "contact-info-item">
+					              	<div class = "contact-info-icon">
+					                	<svg viewBox = "0 0 24 24" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+					                  		<path d = "M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 10.79a19.79 19.79 0 01-3.07-8.67A2 2 0 012.81 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke = "#A8601A" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+					                	</svg>
+					              	</div>
+
+					              	<div class = "contact-info-text">
+					                	<span class = "contact-info-label"> Phone </span>
+					                	<a href = "tel:+211911210809" class = "contact-info-value"> +211 911 210 809 </a>
+					                	<a href = "tel:+211928900079" class = "contact-info-value"> +211 928 900 079 </a>
+					              	</div>
+					            </div>
+
+					            <div class = "contact-info-item">
+					              	<div class = "contact-info-icon">
+					                	<svg viewBox = "0 0 24 24" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+					                  		<path d = "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke = "#A8601A" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+					                  		<polyline points = "22,6 12,13 2,6" stroke = "#A8601A" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+					                	</svg>
+					              	</div>
+
+					              	<div class = "contact-info-text">
+					                	<span class = "contact-info-label"> Email </span>
+					                	<a href = "mailto:racegeneraltrading@gmail.com" class = "contact-info-value">						racegeneraltrading@gmail.com 
+					                	</a>
+					              	</div>
+					            </div>
+
+					            <div class = "contact-info-item">
+					              	<div class = "contact-info-icon">
+					                	<svg viewBox = "0 0 24 24" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+					                  		<path d = "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke = "#A8601A" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+					                  		<circle cx = "12" cy = "10" r = "3" stroke = "#A8601A" stroke-width = "1.5" />
+					                	</svg>
+					              	</div>
+
+					              	<div class = "contact-info-text">
+					                	<span class = "contact-info-label"> Office Address </span>
+					                	<span class = "contact-info-value"> Central Equatoria <br> Juba, South Sudan </span>
+					              	</div>
+					            </div>
+
+					            <div class = "contact-info-item">
+					              	<div class = "contact-info-icon">
+					                	<svg viewBox = "0 0 24 24" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+					                  		<circle cx = "12" cy = "12" r = "10" stroke = "#A8601A" stroke-width = "1.5" />
+					                  		<polyline points = "12,6 12,12 16,14" stroke = "#A8601A" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+					                	</svg>
+					              	</div>
+
+					              	<div class = "contact-info-text">
+					                	<span class = "contact-info-label"> Office Hours </span>
+					                	<span class = "contact-info-value"> Monday – Friday: 8:00am – 5:00pm </span>
+					                	<span class = "contact-info-value contact-info-value--muted"> Saturday: 9:00am – 1:00pm </span>
+					              </div>
+					            </div>
+
+          					</div>
+
+          					<!--quick links to services-->
+          					<div class = "contact-services-quick">
+					            <p class = "contact-services-quick-label"> Enquire about a specific service: </p>
+					            <div class = "contact-services-tags">
+					              	<a href = "#" class = "svc-tag-link" data-service = "construction"> Construction </a>
+					              	<a href = "#" class = "svc-tag-link" data-service = "electricity"> Electricity </a>
+					              	<a href = "#" class = "svc-tag-link" data-service = "engineering"> Engineering </a>
+					              	<a href = "#" class = "svc-tag-link" data-service = "transport"> Transport </a>
+					              	<a href = "#" class = "svc-tag-link" data-service = "maintenance"> Maintenance </a>
+					              	<a href = "#" class = "svc-tag-link" data-service = "equipment"> Equipment </a>
+					            </div>
+					        </div>
+
+          				</aside>
+          				<!--contact info sidebar end-->
+
+      				</div>
+      			</div>
+      		</section>
+			<!--main contact end-->
+
+			<!--map / location-->
+			<section class = "contact-location">
+    			<div class = "contact-location-inner">
+    				<div class = "contact-location-card">
+
+    					<div class = "contact-location-map">
+				          	<!--decorative map grid pattern-->
+				          	<div class = "map-grid-bg"></div>
+			          		<div class = "map-pin-wrap">
+			            		<svg class = "map-pin" viewBox = "0 0 56 72" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+			              			<path d = "M28 2C15.85 2 6 11.85 6 24C6 40 28 70 28 70C28 70 50 40 50 24C50 11.85 40.15 2 28 2Z" fill = "#1B2228" stroke = "#A8601A" stroke-width = "2" />
+			              			<circle cx = "28" cy = "24" r = "9" fill = "#A8601A" />
+			              			<circle cx = "28" cy = "24" r = "5" fill = "#EDE8DF" />
+			            		</svg>
+			          		</div>
+
+			          		<a href = "https://maps.google.com/?q=Juba,+South+Sudan" target = "_blank" rel = "noopener" class = "map-open-link">
+			            		Open in Google Maps
+			            		<svg width = "12" height = "12" viewBox = "0 0 12 12" fill = "none" aria-hidden = "true">
+			              			<path d = "M2 10L10 2M10 2H5M10 2V7" stroke = "currentColor" stroke-width = "1.5" stroke-linecap = "round" stroke-linejoin = "round" />
+			            		</svg>
+			          		</a>
+				        </div>
+
+				        <div class = "contact-location-details">
+				          	<p class = "eyebrow"> [ FIND US ] </p>
+				          	<h3> Our Office </h3>
+				          	<address>
+				            	<p> <strong> Race General Trading Co. Ltd </strong> </p>
+				            	<p> Central Equatoria <br> Juba, South Sudan </p>
+				          	</address>
+				          	<div class = "location-identifiers">
+				            	<div class = "location-id-item">
+				              		<span class = "location-id-label"> Registration </span>
+				              		<span class = "location-id-value"> No. 38,398 (REP) </span>
+				            	</div>
+
+				            	<div class = "location-id-item">
+				              		<span class = "location-id-label"> TIN </span>
+				              		<span class = "location-id-value"> B20210817V1JYY6 </span>
+				            	</div>
+				          	</div>
+
+				          	<a href = "https://maps.google.com/?q=Juba,+South+Sudan" target = "_blank" rel = "noopener" class = "btn btn-primary location-btn">
+				          		Get Directions 
+				          	</a>
+				        </div>
+
+    				</div>
+    			</div>
+    		</section>
+
+		</main>
+
+		<!--footer-->
+		<footer class = "site-footer">
+  			<div class = "footer-inner">
+
+  				<div class = "footer-col footer-brand">
+			      	<div class = "logo footer-logo">
+			        	<span class = "logo-mark"> RACE </span>
+			        	<span class = "logo-sub"> GENERAL TRADING CO. LTD </span>
+			      	</div>
+			      	<p> Contracting, engineering, and trading services across South Sudan. </p>
+			      	<p class = "footer-reg"> REG. NO. 38,398 &nbsp;|&nbsp; TIN B20210817V1JYY6 </p>
+			    </div>
+
+			    <div class = "footer-col">
+			      	<h4> Quick Links </h4>
+			      	<a href = "index.html"> Home </a>
+			      	<a href = "about.html"> About </a>
+			      	<a href = "services.html"> Services </a>
+			      	<a href = "certifications.html"> Certifications </a>
+			      	<a href = "contact.html"> Contact </a>
+			    </div>
+
+			    <div class = "footer-col">
+			      	<h4> Services </h4>
+			      	<a href = "services.html"> Construction &amp; Civil Works </a>
+			      	<a href = "services.html"> Electricity &amp; Engineering </a>
+			      	<a href = "services.html"> Equipment &amp; Transport Supply </a>
+			      	<a href = "services.html"> Maintenance &amp; Finishing </a>
+			    </div>
+
+			    <div class = "footer-col">
+			      	<h4> Contact </h4>
+			      	<a href = "tel:+211911210809"> +211 911 210 809 </a>
+			      	<a href = "tel:+211928900079"> +211 928 900 079 </a>
+			      	<a href = "mailto:racegeneraltrading@gmail.com"> racegeneraltrading@gmail.com </a>
+			      	<span class = "footer-address"> Central Equatoria, Juba, South Sudan </span>
+			    </div>
+
+  			</div>
+
+  			<!--footer bottom-->
+  			<div class = "footer-bottom">
+  				<div class = "footer-bottom-inner">
+			    	<p> &copy; 2026 Race General Trading Co. Ltd. All rights reserved. </p>
+			    	<p class = "footer-credit"> Site by <a href = "#" target = "_blank" rel = "noopener"> R.Chan </a> </p>
+			    </div>
+			</div>
+
+  		</footer>
+  		<!--footer end-->
+
+  		<!--back to top-->
+		<button id = "backToTop" class = "back-to-top" aria-label = "Back to top"> &uarr; </button>
+
+  		<!--javascript-->
+  		<script src = "js/script.js"></script>
+  		<!--javascript end-->
+
+	</body>
+</html>
