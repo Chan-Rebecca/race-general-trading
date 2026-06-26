@@ -229,29 +229,29 @@ h1, h2, h3, h4
     gap: 24px;
 }
 
-.logo 
-{ 
-    display: flex; 
-    flex-direction: column; 
-    line-height: 1; 
+/* logo */
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
 }
 
-.logo-mark 
+.logo-img
 {
-    font-family: var(--font-display);
-    font-size: 1.7rem;
-    font-weight: 800;
-    color: var(--gunmetal);
-    letter-spacing: 0.02em;
+    display: block;
+    height: 70px;      /* Desktop */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    width: auto;
+    
 }
 
-.logo-sub 
+.logo:hover .logo-img
 {
-    font-family: var(--font-mono);
-    font-size: 0.58rem;
-    letter-spacing: 0.14em;
-    color: var(--oxide);
-    margin-top: 2px;
+    transform: scale(1.03);
 }
 
 .main-nav 
@@ -697,9 +697,18 @@ h1, h2, h3, h4
     color: var(--amber); 
 }
 
-.footer-logo .logo-mark 
-{ 
-    color: var(--white); 
+.footer-logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-img
+{
+    width: 240px;      /* Adjust as needed */
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .footer-brand p 
@@ -895,6 +904,11 @@ h1, h2, h3, h4
 
 @media (max-width: 480px) 
 {
+    .logo-img
+    {
+        height: 60px;
+    }
+
     .section-inner, .header-inner, .topbar-inner 
     { 
         padding-left: 20px; 
